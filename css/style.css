@@ -22,7 +22,7 @@
 }
 .form_text {
     margin-top: 20px;
-    text-align: center;
+    text-align: center; 
     font-size: 40px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -91,3 +91,29 @@ font-size: 15px;
   } 
   .button1:hover { background: linear-gradient(#f5ae00, #f59500) #f5ae00; }
   .button1:active {  background: linear-gradient(#f59500, #f5ae00) #f59500; }
+  
+  /* скрываем чекбоксы и блоки с содержанием */
+.hide {
+  display: none; 
+}
+.hide + label ~ div{
+  display: none;
+}
+/* оформляем текст label */
+.hide + label {
+  padding: 0;
+  font-weight: 500;
+  font-size: 22px;
+  cursor: pointer;
+  display: inline-block; 
+}
+/* вид текста label при активном переключателе */
+.hide:checked + label {
+  border-bottom: 0;
+}
+/* когда чекбокс активен показываем блоки с содержанием  */
+.hide:checked + label + div {
+  display: block; 
+  color: rgb(95, 94, 94);
+  transition: 0.7s;
+}
