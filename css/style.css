@@ -41,10 +41,7 @@ h5.card-title {
 .about_text{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-/* .about_hr{
-  width: 40%;
-  text-align: center;
-} */
+
 .form_text {
   margin-top: 20px;
   text-align: center; 
@@ -69,61 +66,61 @@ font-size: 15px;
 }
 
 .form {
-  padding: 15px;
-  }
+padding: 15px;
+}
   
-  .form-item {
-  margin-top: 30px;
-  vertical-align: top;
-  position: relative;
-  }
+.form-item {
+margin-top: 30px;
+vertical-align: top;
+position: relative;
+}
   
-  .form-input {
-    width: 100%;
-    height: 40px;
-    padding: 5px 15px;
-  }
+.form-input {
+width: 100%;
+height: 40px;
+padding: 5px 15px;
+}
   
-  .form-label {
-    position: absolute;
-    pointer-events: none;
-    left: 15px;
-    top: 0;
-    line-height: 40px;
-    transition: .3s;
-    font-size: 20px;
-  }
+.form-label {
+position: absolute;
+pointer-events: none;
+left: 15px;
+top: 0;
+line-height: 40px;
+transition: .3s;
+font-size: 20px;
+}
   
-  .form-input:focus~.form-label,
-  .form-input:not(:focus):valid~.form-label {
-    top: -30px;
-    font-size: 17px;
-  }
-  .button1 {
-    
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    padding: .5em 2em;
-    outline: none;
-    border-width: 2px 0;
-    border-style: solid none;
-    border-color: #FDBE33 #000 #D77206;
-    border-radius: 6px;
-    background: linear-gradient(#F3AE0F, #E38916) #E38916;
-    transition: 0.2s;
-  } 
-  .button1:hover { background: linear-gradient(#f5ae00, #f59500) #f5ae00; }
-  .button1:active {  background: linear-gradient(#f59500, #f5ae00) #f59500; }
+.form-input:focus~.form-label,
+.form-input:not(:focus):valid~.form-label {
+top: -30px;
+font-size: 17px;
+}
+.button1 {
+display: inline-block;
+color: white;
+text-decoration: none;
+padding: .5em 2em;
+outline: none;
+border-width: 2px 0;
+border-style: solid none;
+border-color: #FDBE33 #000 #D77206;
+border-radius: 6px;
+background: linear-gradient(#F3AE0F, #E38916) #E38916;
+transition: 0.2s;
+} 
+
+.button1:hover { background: linear-gradient(#f5ae00, #f59500) #f5ae00; }
+.button1:active {  background: linear-gradient(#f59500, #f5ae00) #f59500; }
   
-  /* скрываем чекбоксы и блоки с содержанием */
+/*ховаємо чекбокси і блоки з контентом*/
 .hide {
   display: none; 
 }
 .hide + label ~ div{
   display: none;
 }
-/* оформляем текст label */
+/* оформляємо текст label */
 .hide + label {
   padding: 0;
   font-weight: 500;
@@ -131,11 +128,11 @@ font-size: 15px;
   cursor: pointer;
   display: inline-block; 
 }
-/* вид текста label при активном переключателе */
+/*вид текста label при активному переключення */
 .hide:checked + label {
   border-bottom: 0;
 }
-/* когда чекбокс активен показываем блоки с содержанием  */
+/*коли чекбокс активний показує блок з контентом*/
 .hide:checked + label + div {
   display: block; 
   color: rgb(95, 94, 94);
@@ -143,6 +140,14 @@ font-size: 15px;
 
 .price-text-top {
   margin: 20px 0px 0px 0px;
+  border-radius: 15px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.price-text {
+  border-radius: 15px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0; 
 }
 .price-text-top, .price-text {
   font-size: 30px;
